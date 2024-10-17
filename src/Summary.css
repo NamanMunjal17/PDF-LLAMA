@@ -1,0 +1,100 @@
+.next-page {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #121212; /* Dark background */
+    overflow: hidden;
+    background: 
+      radial-gradient(circle at top left, rgba(0, 255, 136, 0.1), transparent 40%), 
+      radial-gradient(circle at bottom right, rgba(0, 255, 136, 0.1), transparent 80%),
+      #111;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center; /* Center the boxes in each row */
+    width: 100%; /* Full width for the row */
+    margin: 20px 0; /* Space between rows */
+  }
+  
+  .box {
+    display: flex;
+    overflow: scroll;
+    flex-direction: column; /* Stack text and input vertically */
+    align-items: center;
+    justify-content: space-between; /* Space between text and input */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.1); /* Fainter green glow */
+    animation: fly-in 1s forwards; /* Animation on load */
+    margin: 10px; /* Margin between boxes */
+    overflow: hidden;
+  }
+  
+  .big {
+    width: 50%; /* Width for big boxes */
+    height: 200px; /* Height for big boxes */
+    background-color: #1f1f1f; /* Dark color */
+    padding: 10px; /* Padding for text */
+  }
+  
+  .small {
+    width: 20%; /* Width for small boxes */
+    height: 120px; /* Height for small boxes */
+    background-color: #1f1f1f; /* Dark color */
+    padding: 10px; /* Padding for text */
+  }
+  
+  input {
+    margin-top: auto; /* Stick to bottom */
+    padding: 8px; /* Padding for the input */
+    border: none;
+    border-radius: 5px;
+    background-color: #2c2c2c; /* Dark background for input */
+    color: white;
+    width: 100%; /* Full width of the box */
+  }
+  
+  input::placeholder {
+    color: #bbb;
+  }
+  
+  /* Fly-in animation */
+  @keyframes fly-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%); /* Fly in from the top */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add glow effect on hover */
+  .box:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2); /* Slightly brighter on hover */
+    transition: box-shadow 0.3s ease;
+  }
+  
+
+/* For WebKit-based browsers (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar (if any) */
+}
+
+/* Style the scrollbar track */
+body::-webkit-scrollbar-track {
+  background: transparent; /* Set to transparent to avoid showing an empty scrollbar */
+}
+
+/* Style the scrollbar thumb (draggable part) */
+body::-webkit-scrollbar-thumb {
+  background-color: #28a745; /* Scrollbar color (green) */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #1a1a1a; /* Matches the dark background */
+}
