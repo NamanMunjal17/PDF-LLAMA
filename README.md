@@ -11,6 +11,7 @@ Local Execution: All processing is done locally, ensuring privacy and no relianc
 Used the Stanford Squad dataset to fine tune the llama3 model with the help of unsloth. The llama3 model is hosted over a flask api which is accessed by the reactjs frontend
 # Back End
 Unsloth: For handling AI tasks with Llama3.
+Supabase: Container to store pdf files
 Llama3: Used for generating questions, answering, and summarizing PDF content.
 Flask: Provides the API for the front end to communicate with the back end.
 # Front End
