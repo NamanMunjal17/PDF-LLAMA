@@ -15,7 +15,7 @@ The LLAMA model is finetuned over the Stanford's SQUAD Dataset with the help of 
 ## System Design
 The file is uploaded over the ReactJS frontend, this file is then uploaded to supabase with a UUID key. The UUID is stored in the localStorage to save "old files". This file is now retrieved by the python backend where the file is ingested and text is extracted. This text is now fed to the finetuned LLAMA model which gives back the summary, questions from the file and can answer the questions you ask from the file. This also cites the answers from the original pdf. The file is uploaded on the supabase bucket hence you can see it on the output screen too.
 
-##Citation Algorithm
+## Citation Algorithm
 The citation algorithm uses the word2vectorization and cosine similarity algorithm to find the output answer in the original file.
 
 ## Why is this method better?
