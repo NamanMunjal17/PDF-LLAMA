@@ -27,3 +27,6 @@ The citation algorithm uses the word2vectorization and cosine similarity algorit
 ## What could have been better?
 1) Getting the LLAMA model and website hosted.
 2) Running the LLAMA model on a faster machine for faster outputs.
+
+##Video and PPT Link
+https://drive.google.com/drive/folders/16OKUjyvTOUzx0RqDTYQUdM0MSINyzXHA?usp=sharing
