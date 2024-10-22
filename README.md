@@ -21,7 +21,7 @@ The citation algorithm uses the word2vectorization and cosine similarity algorit
 ## Why is this method better?
 1) The API is totally free of cost the LLAMA model is running locally on the laptop.
 2) Supports: PDFs, TXTs, DOCXs
-3) Supabsse bucket for long term storage of files
+3) Supabase bucket for long term storage of files
 4) No sign in required we rather use localStorage to store UUIDs to old files
 
 ## What could have been better?
