@@ -1,25 +1,70 @@
-# PDF LLAMA
-This project utilizes Unsloth with Llama3 to read PDF documents, generate questions, answer questions based on the content, and summarize text completely locally. The front end is built with ReactJS, and the back end uses a Flask API for communication between the two components.
+# Getting Started with Create React App
 
-# Features
-PDF Parsing: Reads and extracts text from PDF documents.
-Question Generation: Automatically generates relevant questions based on the content of the PDF.
-Answering Questions: Allows users to ask questions related to the content, and Llama3 provides accurate answers based on the PDF data.
-Summarization: Provides a concise summary of the entire PDF document.
-Local Execution: All processing is done locally, ensuring privacy and no reliance on external servers.
-# Technology Stack
-Used the Stanford Squad dataset to fine tune the llama3 model with the help of unsloth. The llama3 model is hosted over a flask api which is accessed by the reactjs frontend
-# Back End
-Unsloth: For handling AI tasks with Llama3.
-Supabase: Container to store pdf files
-Llama3: Used for generating questions, answering, and summarizing PDF content.
-Flask: Provides the API for the front end to communicate with the back end.
-# Front End
-ReactJS: User interface built with a modern and interactive design.
-Custom Dark Theme: Includes glowing green characters and animated elements to enhance the user experience.
-# Future Enhancements
-Multi-language support: Extend the capabilities of the system to support multiple languages for PDF content.
-Customizable Summarization: Allow users to adjust the length and detail of the summaries.
-Offline Support: Package the entire application for offline use.
-# Video & Presentation
-https://drive.google.com/drive/folders/19x7TuBUkhLayjSZqtcANzQxWuqzA8zYW?usp=sharing
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

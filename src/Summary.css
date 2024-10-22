@@ -2,7 +2,6 @@
     display: flex;
     width: 100vw;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: #121212; /* Dark background */
@@ -16,26 +15,30 @@
   .row {
     display: flex;
     justify-content: center; /* Center the boxes in each row */
-    width: 100%; /* Full width for the row */
-    margin: 20px 0; /* Space between rows */
+    width: 60%; /* Full width for the row */
+    margin: -10px 0; /* Space between rows */
+  }
+
+  .row1 {
+    width: 60%; /* Full width for the row */
+    margin-left: 10px;
   }
   
   .box {
     display: flex;
     overflow: scroll;
     flex-direction: column; /* Stack text and input vertically */
-    align-items: center;
     justify-content: space-between; /* Space between text and input */
     color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.1); /* Fainter green glow */
     animation: fly-in 1s forwards; /* Animation on load */
     margin: 10px; /* Margin between boxes */
-    overflow: hidden;
+    overflow-x: hidden;
   }
   
   .big {
-    width: 50%; /* Width for big boxes */
+    width: 100%; /* Width for big boxes */
     height: 200px; /* Height for big boxes */
     background-color: #1f1f1f; /* Dark color */
     padding: 10px; /* Padding for text */
@@ -52,10 +55,10 @@
     margin-top: auto; /* Stick to bottom */
     padding: 8px; /* Padding for the input */
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #2c2c2c; /* Dark background for input */
     color: white;
-    width: 100%; /* Full width of the box */
+    width: 99%; /* Full width of the box */
   }
   
   input::placeholder {
@@ -82,19 +85,37 @@
   
 
 /* For WebKit-based browsers (Chrome, Safari, Edge) */
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
   height: 8px; /* Height of the horizontal scrollbar (if any) */
 }
 
 /* Style the scrollbar track */
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: transparent; /* Set to transparent to avoid showing an empty scrollbar */
 }
 
 /* Style the scrollbar thumb (draggable part) */
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: #28a745; /* Scrollbar color (green) */
   border-radius: 10px; /* Rounded corners */
   border: 2px solid #1a1a1a; /* Matches the dark background */
+}
+.file{
+  position: absolute;
+  right: 5%;
+  height: 80%;
+  width: 30%;
+  top: 10%;
+}
+.ifile{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.spinner{
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
